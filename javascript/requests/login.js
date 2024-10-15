@@ -7,7 +7,7 @@ form.addEventListener("submit", async event => {
 
     const data = await fetch("https://projetospf.rf.gd/backend/login.php", {
         method: "POST",
-        mode: "no-cors",
+        mode: "cors",
         body: formData,
 
     })
