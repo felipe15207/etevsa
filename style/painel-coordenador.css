@@ -1,0 +1,89 @@
+.header-painel {
+    width: 100%;
+    height: auto;
+    padding: 28px 8% 0;
+    margin-bottom: 25px;
+    background-color: #3C4A9B;
+    color: #FFF;
+}
+
+.nome-painel {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.ul-painel {
+    display: flex;
+    gap: 25px;
+}
+
+.li-painel {
+    list-style: none;
+}
+
+.li-painel a {
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.conteudo-painel {
+    padding: 0px 8%;
+    margin-bottom: 25px;
+}
+
+.config-listagem {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#btn-registrar {
+margin-top: -25px;
+}
+
+#input-pesquisa {
+    border-radius: 25px;
+}
+
+.container-pesquisa {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#input-pesquisa {
+    width: 320px;
+    height: 28px;
+}
+
+#form-aluno {
+    margin-bottom: 16px;
+}
+
+#listagem-alunos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.card-aluno {
+    padding: 15px 2%;
+    display: flex;
+    align-items: center;
+    background-color: #FFDE59;
+    border-radius: 15px;
+}
+
+.card-aluno img {
+    width: 70px;
+    height: 70px;
+    margin-right: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dados-aluno {
+    width: 50%;
+    padding: auto 25px;
+}

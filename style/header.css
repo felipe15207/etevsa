@@ -1,0 +1,168 @@
+.header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3000;
+}
+
+#btn-conta {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: #3C4A9B;
+    border-radius: 50%;
+    position: relative;
+}
+
+#btn-conta i{
+    font-size: 28px;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar img {
+    width: 300px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    list-style: none;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+.linha-mobile-btn {
+    width: 50px;
+    height: 6px;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: center;
+    transition: 0.7s;
+    position: absolute;
+}
+
+.linha-mobile-btn:nth-child(1) {
+    top: 4px;
+}
+
+.linha-mobile-btn:nth-child(3) {
+    bottom: 4px;
+}
+
+#mobile_menu {
+    display: none;
+    background-color: var(--color-primary-1);
+    position: absolute;
+    width: 100%;
+    top: 70px; /* Alinhado logo abaixo do header */
+    left: 0;
+    z-index: 1000; /* Garantir que o menu fique acima de todos os outros elementos */
+}
+
+#mobile_menu.active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#mobile_nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile_nav_list .nav-item {
+    text-align: center;
+}
+
+#mobile_nav_list .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+}
+
+#mobile_nav_list .nav-item a:hover {
+    background-color: var(--color-primary-4);
+}
+
+@media screen and (max-width: 1170px) {
+
+    header {
+        padding: 28px 2%;
+    }
+
+    #navbar img {
+        width: 210px;
+        object-fit: cover;
+    }
+
+    #nav_list {
+        display: none;
+    }
+
+    #mobile_btn {
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 11; /* Garantir que o botão fique acima de outros elementos */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .btn-x .linha-mobile-btn {
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .btn-x .linha-mobile-btn:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .btn-x .linha-mobile-btn:nth-child(2) {
+        width: 0;
+    }
+
+    .btn-x .linha-mobile-btn:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}

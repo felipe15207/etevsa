@@ -1,0 +1,41 @@
+.form-login {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-form {
+    margin-bottom: 25px;
+}
+
+label {
+    width: 350px;
+}
+
+.form-login > input {
+    width: 350px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding-inline-start: 10px;
+    margin-bottom: 35px;
+}
+
+#acessar-btn {
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: white;
+    background-color: var(--cor-primaria);
+}
+
+#acessar-btn:hover {
+    color: black;
+    background-color: white;
+}
