@@ -1,0 +1,308 @@
+
+/*  cabeçalho */
+
+.head-servicos {
+    width: 100%;
+    height: auto;
+    background-image: url(imgs/BackgroundServices.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align:center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-conheca {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:999px){
+    .head-servicos {
+        height: 400px;
+    }
+}
+
+.T1{
+    font-size: 4rem;
+    color:rgb(245, 211, 149);
+}
+.T2{
+    font-size:  5rem; 
+    color:rgb(209, 149, 71);
+    margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+
+    .T1{
+        font-size: 2.5rem;
+    }
+    .T2{
+        font-size:  3.5rem; 
+    }
+}
+
+/* fim do cabeçalho */
+
+
+
+/* Tcafe */
+
+.Tcafe {
+    background-color: #111010;
+    padding: 100px;
+    border: 1px;
+    border-style: groove;
+    border-color: rgb(71, 71, 71);
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.tipo-cafe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+@media screen and (max-width:1197px){
+    .Tcafe {
+        gap: 50px;
+    }
+
+    .tipo-cafe {
+        gap: 15px;
+        flex-direction: column;
+    }
+    .tipo-cafe .desc-tipocafe{
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
+.tipo-cafe:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.desc-tipocafe {
+    text-align: right;
+}
+
+.tipo-cafe:nth-child(odd) .desc-tipocafe {
+    text-align: left;
+}
+
+.container-tipcafe {
+    max-width: 500px;
+    max-height: 333px;
+    flex: 1 500px;
+}
+
+.Tcafe img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.desc-tipocafe {
+    max-width: 400px;
+    max-height: 200px;
+    flex: 1 400px;
+}
+
+.desc-tipocafe p {
+    color: wheat;
+}
+
+/* fim do Tcafe */
+
+/* carrossel */
+.TD{
+    text-align: center;
+    margin-bottom: 80px;
+    font-family:"Host Grotesk", serif ;
+    color: burlywood;
+    font-size: 70px;
+}
+.td-h4{
+    color:wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bs_imagegrid_section5 {
+    background-color: #111010;
+}
+
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators button {
+background-color: #f40000 !important;
+}
+
+.carousel-indicators button:hover {
+background-color: blue !important;
+}
+
+.carousel-indicators .active {
+background-color: #ffffff !important; 
+}
+
+/* fim do carrossel*/
+
+
+/* biografia */
+.biografia{
+    text-align: center;
+    color:white;
+    background-color: #111010;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 70px;
+    padding: 9px;
+    border-radius: 90px;
+    border: 1px;
+    border-style:groove ;
+    
+
+    
+ }
+
+ .biografia h1{
+    margin-bottom: 60px;
+    font-family:"Host Grotesk", serif ;
+    font-size: 60px;
+    color: wheat;
+    margin-top: 110px;
+    margin-left: 20px;
+ }
+
+ .biografia p{
+    color: wheat;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+    padding-bottom: 100px;
+   
+ }
+ 
+ .biografia h2{
+        margin-bottom: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: burlywood;
+        font-size: 50px;
+        margin-left: 185px;
+        margin-right: 100px;
+        
+}
+
+.biografia2{
+    display: flex;
+    
+}
+
+.biografia3{
+    display: flex;
+}
+
+ .logo{
+    width: 210px;
+    margin-bottom: 60px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 50px;
+    padding: 10px;
+    margin-left: 100px;
+ }
+
+ .Helder{
+    width: 600px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+ }
+
+
+  footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    color: #fafafa;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+    
+
+    img {
+        width: 60px;
+    }
+    p {
+        text-align: center;
+        color: #fff;
+    }
+    #botoes {
+        display: flex;
+    }
+    #botoes .btn-return {
+        border: 2px solid #c0ab70;
+        display: flex;
+        color: #c0ab70;
+        padding: 8px;
+        border-radius: 6px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.33s;
+        align-items: center;
+    }#botoes .btn-return i {
+        margin-right: 6px;
+    }
+    #botoes .btn-return:hover {
+        background-color: #c0ab70;
+        color: #fafafa;
+    }
+
+ .Location{
+    text-align: center;
+    margin-bottom: 100px;   
+    margin-left: 320px;
+    margin-right: 320px;
+   
+     
+    
+    
+    
+ }
+.LC-text-image{
+    padding-bottom: 30px;
+    display: block;
+    
+}
+.LC-1{
+    width: 1000px;
+    height: 600px;
+}
+.LC-2{
+    width: 1000px;
+    height: 600px;
+}
+ .LC-text{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family:"Host Grotesk", serif ;
+    color: burlywood;
+    font-size: 70px;
+ }
